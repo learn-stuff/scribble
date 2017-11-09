@@ -1,8 +1,11 @@
 (ns scribble.core
   (:require [reagent.core :as r]
-            [clojure.string :as string]))
+            [clojure.string :as string]
+            [luggage]))
 
 (enable-console-print!)
+
+(println luggage)
 
 (defn xy [e]
   (let [rect (.getBoundingClientRect (.-target e))]

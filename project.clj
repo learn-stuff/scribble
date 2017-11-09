@@ -31,6 +31,8 @@
                            :open-urls ["http://localhost:3449/index.html"]}
 
                 :compiler {:main scribble.core
+                           :npm-deps {:luggage "luggagejs/luggage#2.1.5"}
+                           :install-deps true
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/scribble.js"
                            :output-dir "resources/public/js/compiled/out"
